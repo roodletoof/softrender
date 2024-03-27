@@ -52,7 +52,7 @@ func (s *Surface[T]) SetPixel(color T, x, y int) {
 func (s *Surface[T]) Line(color T, x0, y0, x1, y1 int) {
 	abs := func(i int) int {
 		if i < 0 {
-			return -1
+			return -i
 		}
 		return i
 	}
